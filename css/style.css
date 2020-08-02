@@ -119,14 +119,14 @@ body {
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
-
-	color: var(--primary-black-color);
 	text-decoration: none;
+	color: var(--accent-color);
 }
 
 /* web-studio heder */
 .logo-accent {
-	color: var(--accent-color);
+	color: var(--primary-black-color);
+	text-decoration: none;
 }
 
 /* web-studio footer */
@@ -140,7 +140,7 @@ body {
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
-
+	text-decoration: none;
 	color: var(--primary-white-color);
 	text-decoration: none;
 }
