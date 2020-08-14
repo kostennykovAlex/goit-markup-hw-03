@@ -15,224 +15,261 @@
 	<body>
 		<!----header---->
 		<header>
-			<nav>
-				<a href="index.html" class="logo-link">
-					<span class="logo-accent">Web</span>
-					Studio
-				</a>
-				<!----Info---->
-				<ul class="site-nav list">
-					<li>
-						<a href="index.html">Студия</a>
-					</li>
-					<li>
-						<a href="portfolio.html">Портфолио</a>
-					</li>
-					<li>
-						<a href="">Контакты</a>
-					</li>
-				</ul>
-				<!----contact---->
-				<address>
-					<ul class="contacts-footer list">
+			<div class="headernav">
+				<nav class="nav-header">
+					<div class="logolink">
+						<a href="index.html" class="logo-link">
+							<span class="logo-accent">Web</span>
+							Studio
+						</a>
+				</div>
+					<!----Info---->
+					<div>
+					<ul class="site-nav list">
 						<li>
-							<a href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer" class="contacts">
-								info@devstudio.com
-							</a>
+							<a href="index.html" class="link-index">Студия</a>
 						</li>
-						<br />
 						<li>
-							<a href="tel:+380961111111" target="_blank" rel="noopener noreferrer" class="contacts">
-								+38 096 111 11 11
-							</a>
+							<a href="portfolio.html" class="link-crrok">Портфолио</a>
+						</li>
+						<li>
+							<a href="#" class="contact">Контакты</a>
 						</li>
 					</ul>
-				</address>
-			</nav>
+					</div>
+					<!----contact---->
+					<address>
+						<ul class="contact-list">
+							<li class="mailto">
+								<a href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer" class="list-contact">
+									info@devstudio.com
+								</a>
+							</li>
+							<br />
+							<li class="tel">
+								<a href="tel:+380961111111" target="_blank" rel="noopener noreferrer" class="list-contact">
+									+38 096 111 11 11
+								</a>
+							</li>
+						</ul>
+					</address>
+				</nav>
+			</div>
 		</header>
 
 		<!----blok Hero---->
 		<main>
 			<!----order service---->
 			<section>
-				<h1 id="title">Эффективные решения для вашего бизнеса</h1>
+				<div class="titlebutton"> 
+				<h1 class="title">Эффективные решения для вашего бизнеса</h1>
 				<!----button---->
-				<button type="button">Заказать услугу</button>
+				<button type="button" class="button-index">Заказать услугу</button>
+				</div>
 			</section>
 			<!----features---->
 			<section>
-				<h2>Особенности</h2>
-				<ul class="product-features">
-					<li>
-						<img src="./img/antenna.svg" alt="" width="70" />
-						<h3>Внимание к деталям</h3>
-						<p class="project">
-							Идейные соображения, а также начало повседневной работы пформированию позиции
-						</p>
-					</li>
-					<li>
-						<img src="./img/clock.svg" alt="" width="70" />
-						<h3>Пунктуальность</h3>
-						<p class="project">
-							Задача организации, в особенности же рамки и место обучения кадровлечет засобой.
-						</p>
-					</li>
-					<li>
-						<img src="./img/diagram.svg" alt="" width="70" />
-						<h3>Планирование</h3>
-						<p class="project">
-							Равным образом консультация с широким активом в значительнойстепенобуславливает.
-						</p>
-					</li>
-					<li>
-						<img src="./img/astronaut.svg" alt="" width="70" />
-						<h3>Современные технологии</h3>
-						<p class="project">
-							Значимость этих проблем настолько очевидна, что реализация плановызаданий.
-						</p>
-					</li>
-				</ul>
+				<div>
+					<ul class="product-features">
+						<li>
+							<img src="./img/antenna.svg" alt="" width="70" class="antena" />
+							<h3 class="atenthion1">Внимание к деталям</h3>
+							<p class="project-features1">
+								Идейные соображения, а также начало повседневной работы пформированию позиции
+							</p>
+						</li>
+						<li>
+							<img src="./img/clock.svg" alt="" width="70" class="clock" />
+							<h3 class="atenthion2">Пунктуальность</h3>
+							<p class="project-features2">
+								Задача организации, в особенности же рамки и место обучения кадровлечет засобой.
+							</p>
+						</li>
+						<li>
+							<img src="./img/diagram.svg" alt="" width="70" class="diagram" />
+							<h3 class="atenthion3">Планирование</h3>
+							<p class="project-features3">
+								Равным образом консультация с широким активом в значительнойстепенобуславливает.
+							</p>
+						</li>
+						<li>
+							<img src="./img/astronaut.svg" alt="" width="70" class="astronaut" />
+							<h3 class="atenthion4">Современные технологии</h3>
+							<p class="project-features4">
+								Значимость этих проблем настолько очевидна, что реализация плановызаданий.
+							</p>
+						</li>
+					</ul>
+				</div>
+		
 			</section>
 
 			<!----duties---->
 			<section>
-				<h2>Чем мы заниамемся</h2>
-				<ul class="sections-duties">
-					<li>
-						<a href="">
-							<h3 class="duties">Десктопные приложения</h3>
-							<img src="./img/desktop.jpg" alt="Десктоп" width="370" height="295" class="qwer" />
-						</a>
-					</li>
+				<div class="container">
+					<h2 class="whatdid">Чем мы занимаемся</h2>
+				
+				<div>
+					<ul class="sections-duties">
+						<li>
+							<a href="">
+								<h3 class="container-duties1">Десктопные приложения</h3>
+								<img src="./img/desktop.jpg" alt="Десктоп" width="370" height="295" class="sections-duties1" />
+							</a>
+						</li>
 
-					<li>
-						<a href="">
-							<h3 class="duties">Мобильные приложения</h3>
-							<img src="./img/mobile.jpg" alt="Mобильные приложения" width="370" height="295" />
-						</a>
-					</li>
+						<li>
+							<a href="">
+								<h3 class="container-duties2">Мобильные приложения</h3>
+								<img src="./img/mobile.jpg" alt="Mобильные приложения" width="370" height="295"  class="sections-duties2"/>
+							</a>
+						</li>
 
-					<li>
-						<a href="">
-							<h3 class="duties">Дизайнерские решения</h3>
-							<img src="./img/portfolio/solutions.jpg" alt="Дизайнерские решения" width="370" height="295" />
-						</a>
-					</li>
-				</ul>
+						<li>
+							<a href="">
+								<h3 class="container-duties3">Дизайнерские решения</h3>
+								<img src="./img/portfolio/solutions.jpg" alt="Дизайнерские решения" width="370" height="295" class="sections-duties3" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				</div>
 			</section>
 			<!----our team---->
-			<section>
-				<h2>Наша команда</h2>
-				<ul class="our-team">
-					<li>
+			<section class="team-sections-bg">
+				<div class="team-sections-blok">
+				<h2 class="team-sectionsh2">Наша команда</h2>
+				<div>
+				<ul class="ourteam">
+					<li class="resume-nikolay">
 						<img src="./img/nikolay.jpg" alt="Nikolay Kucherenko" width="270" height="260" />
 						<h3>Николай Кучеренко</h3>
-						<p lang="en" class="project">Product Designer</p>
-						<ul class="our-team">
-							<li class="list">
-								<a href="#" target="_blank">
+						<p lang="en" class="project-our-team">Product Designer</p>
+						<ul class="social-links">
+							<li>
+								<a href="#" target="_blank" class="link">
 									<img src="./img/portfolio/social-link/inst-ellipse.svg" alt="instagram" />
 								</a>
 							</li>
 							<li>
-								<a href="#" target="_blank"><img src="./img/portfolio/social-link/twit-ellipse.svg" alt="twitter" /></a>
+								<a href="#" target="_blank" class="link">
+									<img src="./img/portfolio/social-link/twit-ellipse.svg" alt="twitter" />
+								</a>
 							</li>
 							<li>
-								<a href="#" target="_blank">
+								<a href="#" target="_blank" class="link">
 									<img src="./img/portfolio/social-link/face-ellipse.svg" alt="facebook" />
 								</a>
 							</li>
 							<li>
-								<a href="#" target="_blank"><img src="./img/portfolio/social-link/in-ellipse.svg" alt="linkedin" /></a>
+								<a href="#" target="_blank" class="link">
+									<img src="./img/portfolio/social-link/in-ellipse.svg" alt="linkedin" />
+								</a>
 							</li>
 						</ul>
 					</li>
+					
+
+					<div>
 					<li>
 						<img src="./img/olga.jpg" alt="Olga Ivanova" width="270" height="260" />
 						<h3>Ольга Иванова</h3>
 						<p lang="en" class="project">Frontend Developer</p>
-						<ul class="our-team">
+						<ul class="social-links">
 							<li>
-								<a href="#" target="_blank">
+								<a href="#" target="_blank" class="link">
 									<img src="./img/portfolio/social-link/inst-ellipse.svg" alt="instagram" />
 								</a>
 							</li>
 							<li>
-								<a href="#" target="_blank"><img src="./img/portfolio/social-link/twit-ellipse.svg" alt="twitter" /></a>
+								<a href="#" target="_blank" class="link">
+									<img src="./img/portfolio/social-link/twit-ellipse.svg" alt="twitter" />
+								</a>
 							</li>
 							<li>
-								<a href="#" target="_blank">
+								<a href="#" target="_blank" class="link">
 									<img src="./img/portfolio/social-link/face-ellipse.svg" alt="facebook" />
 								</a>
 							</li>
 							<li>
-								<a href="#" target="_blank"><img src="./img/portfolio/social-link/in-ellipse.svg" alt="linkedin" /></a>
+								<a href="#" target="_blank" class="link">
+									<img src="./img/portfolio/social-link/in-ellipse.svg" alt="linkedin" />
+								</a>
 							</li>
 						</ul>
 					</li>
+					</div>
 
+					<div>
 					<li>
 						<img src="./img/andrey.jpg" alt="Andrey Shevchenko" width="270" height="260" />
 						<h3>Андрей Шевченко</h3>
 						<p lang="en" class="project">Frontend Developer</p>
-						<ul class="our-team">
+						<ul class="social-links">
 							<li>
-								<a href="#" target="_blank" class="list">
+								<a href="#" target="_blank" class="link">
 									<img src="./img/portfolio/social-link/inst-ellipse.svg" alt="instagram" />
 								</a>
 							</li>
 							<li>
-								<a href="#" target="_blank">
+								<a href="#" target="_blank" class="link">
 									<img src="./img/portfolio/social-link/twit-ellipse.svg" alt="twitter" />
 								</a>
 							</li>
 							<li>
-								<a href="#" target="_blank">
+								<a href="#" target="_blank" class="link">
 									<img src="./img/portfolio/social-link/face-ellipse.svg" alt="facebook" />
 								</a>
 							</li>
 							<li>
-								<a href="#" target="_blank">
+								<a href="#" target="_blank" class="link">
 									<img src="./img/portfolio/social-link/in-ellipse.svg" alt="linkedin" />
 								</a>
 							</li>
 						</ul>
 					</li>
+					</div>
 
+					<div>
 					<li>
 						<img src="./img/ivan.jpg" alt="Andrey Shevchenko" width="270" height="260" />
 						<h3>Иван Николаев</h3>
 						<p lang="en" class="project">UI Designer</p>
-						<ul class="our-team">
+						<ul class="social-links">
 							<li>
 								<a href="#" target="_blank" class="list">
 									<img src="./img/portfolio/social-link/inst-ellipse.svg" alt="instagram" />
 								</a>
 							</li>
 							<li>
-								<a href="#" target="_blank">
+								<a href="#" target="_blank" class="link">
 									<img src="./img/portfolio/social-link/twit-ellipse.svg" alt="twitter" />
 								</a>
 							</li>
 							<li>
-								<a href="#" target="_blank">
+								<a href="#" target="_blank" class="link">
 									<img src="./img/portfolio/social-link/face-ellipse.svg" alt="facebook" />
 								</a>
 							</li>
 							<li>
-								<a href="#" target="_blank">
+								<a href="#" target="_blank" class="link">
 									<img src="./img/portfolio/social-link/in-ellipse.svg" alt="linkedin" />
 								</a>
 							</li>
+							</div>
+						</div>
 						</ul>
 					</li>
 				</ul>
+			</div>
 			</section>
 
 			<!----regular customers---->
 			<section>
+				
+			<div class="container-regular-customers">
 				<h2>Постоянные клиенты</h2>
-				<ul class="regular-customers">
+				<ul class="regular-customers list">
 					<li>
 						<a href="#" target="_blank" rel="noopener noreferrer">
 							<img src="./img/regular-customers/ya-co.svg" alt="logo Ya&Co" />
@@ -269,17 +306,18 @@
 						</a>
 					</li>
 				</ul>
+			</div>
 			</section>
 		</main>
 
 		<!--footer-->
+	<div class="webfooter">
 		<footer class="bg-color">
-			<div>
-				<a href="index.html" class="studio">
+					<a href="index.html" class="studio">
 					<span class="logo-footer">Web</span>
 					Studio
 				</a>
-			</div>
+			
 
 			<!----address---->
 			<div>
@@ -288,13 +326,13 @@
 				</address>
 				<ul class="contacts-footer">
 					<li>
-						<a href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer" class="contacts-adres">
+						<a href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer" class="contacts-adres1">
 							info@devstudio.com
 						</a>
 					</li>
 					<br />
 					<li>
-						<a href="tel:+380961111111" class="contacts-adres">
+						<a href="tel:+380961111111" class="contacts-adres2">
 							+38 096 111 11 11
 						</a>
 					</li>
@@ -327,5 +365,6 @@
 				<p class="networks"><b>подписывайтесь на рассылку</b></p>
 			</section>
 		</footer>
+	</div>
 	</body>
 </html>
