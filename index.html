@@ -23,13 +23,13 @@
         <!---==================Info ==================--->
         <ul class="site-nav list">
           <li>
-            <a href="index.html" class="link">Студия</a>
+            <a href="index.html" class="link current">Студия</a>
           </li>
           <li>
-            <a href="portfolio.html" class="link">Портфолио</a>
+            <a href="portfolio.html" class="link current">Портфолио</a>
           </li>
           <li>
-            <a href="/" aria-label="Контакты" class="link">Контакты</a>
+            <a href="/" aria-label="Контакты" class="link current">Контакты</a>
           </li>
         </ul>
       
@@ -67,12 +67,13 @@
         <!---================== Blok Hero ==================--->
     <main>
       <!---================== Order service ==================--->
-        <section class="hero-section section">
+        <section class="hero-section">
+          <div class="overlay hero-flexbox">
           <div class="container">
-          <img src="./img/img-overlay/head-img.jpg" alt="hero img" />
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <!----button---->
+          <!----==============BUTTON==============---->
           <button type="button" class="hero-button">Заказать услугу</button>
+          </div>
           </div>
         </section>
       </div>
@@ -166,7 +167,7 @@
       </section>
       
       <!---================== Our team ==================--->
-      <section class="section-our-team">
+      <section class="section-our-team section">
         <div class="container">
         <h2 class="our-team-title">Наша команда</h2>
         <ul class="our-team-personal list">
@@ -177,15 +178,33 @@
               width="270"
               height="260"
             />
+            <div class="team-member-information">
             <h3>Игорь Демьяненко</h3>
             <p lang="en">Product Designer</p>
 
             <ul class="our-team-social-link list">
-              <li><a href="" aria-label="Ссылка на Facebook" class="link">Facebook</a></li>
-              <li><a href="" aria-label="Ссылка на Twitter" class="link">Twitter</a></li>
-              <li><a href="" aria-label="Ссылка на Instagram" class="link">Instagram</a></li>
-              <li><a href="" aria-label="Ссылка на LinkedIn" class="link">LinkedIn</a></li>
+              <li class="our-team-social-link-list">
+                <a href="" aria-label="Ссылка на instagram" class="link">
+                <img src="./img/social-link/instagram.svg" alt="Ссылка на instagram">
+                </a>
+            </li>
+              <li class="our-team-social-link-list">
+                <a href="" aria-label="Ссылка на Twitter" class="link">
+                <img src="./img/social-link/twitter.svg" alt="Ссылка на Twitter">
+                 </a>
+            </li>
+              <li class="our-team-social-link-list">
+                <a href="" aria-label="Ссылка на Facebook" class="link">
+                <img src="./img/social-link/facebook.svg" alt="Ссылка на Facebook">
+                 </a>
+            </li>
+              <li class="our-team-social-link-list">
+                <a href="" aria-label="Ссылка на LinkedIn" class="link">
+                <img src="./img/social-link/linkedin.svg" alt="Ссылка на LinkedIn">
+                 </a>
+            </li>
             </ul>
+            </div>
           </li>
 
           <li class="our-team-card">
@@ -195,16 +214,37 @@
               width="270"
               height="260"
             />
+            <div class="team-member-information">
             <h3>Ольга Репина</h3>
             <p lang="en">Frontend Developer</p>
-
-            <ul class="our-team-social-link list">
-              <li><a href="" aria-label="Ссылка на Facebook" class="link">Facebook</a></li>
-              <li><a href="" aria-label="Ссылка на Twitter" class="link">Twitter</a></li>
-              <li><a href="" aria-label="Ссылка на Instagram" class="link">Instagram</a></li>
-              <li><a href="" aria-label="Ссылка на LinkedIn" class="link">LinkedIn</a></li>
-            </ul>
-          </li>
+               <ul class="our-team-social-link list">
+                 <li class="our-team-social-link-list">
+                   <a href="" aria-label="Ссылка на instagram" 
+                  class="link">
+                      <img src="./img/social-link/instagram.svg" alt="Ссылка на instagram">
+                    </a>
+                  </li>
+                    <li class="our-team-social-link-list">
+                      <a href="" aria-label="Ссылка на Twitter" 
+                      class="link">
+                      <img src="./img/social-link/twitter.svg" alt="Ссылка на Twitter">
+                    </a>
+                  </li>
+                    <li class="our-team-social-link-list">
+                      <a href="" aria-label="Ссылка на Facebook" 
+                      class="link">
+                      <img src="./img/social-link/facebook.svg" alt="Ссылка на Facebook">
+                    </a>
+                  </li>
+                    <li class="our-team-social-link-list">
+                      <a href="" aria-label="Ссылка на LinkedIn" 
+                      class="link">
+                    <img src="./img/social-link/linkedin.svg" alt="Ссылка на LinkedIn">
+                   </a>
+               </li>
+               </ul>
+               </div>
+             </li>
 
           <li class="our-team-card">
             <img
@@ -213,15 +253,36 @@
               width="270"
               height="260"
             />
+            <div class="team-member-information">
             <h3>Николай Тарасов</h3>
             <p lang="en">Frontend Developer</p>
-
             <ul class="our-team-social-link list">
-              <li><a href="" aria-label="Ссылка на Facebook" class="link">Facebook</a></li>
-              <li><a href="" aria-label="Ссылка на Twitter" class="link">Twitter</a></li>
-              <li><a href="" aria-label="Ссылка на Instagram" class="link">Instagram</a></li>
-              <li><a href="" aria-label="Ссылка на LinkedIn" class="link">LinkedIn</a></li>
+               <li class="our-team-social-link-list">
+                 <a href="" aria-label="Ссылка на instagram" 
+                class="link">
+                    <img src="./img/social-link/instagram.svg" alt="Ссылка на instagram">
+                  </a>
+                </li>
+                  <li class="our-team-social-link-list">
+                    <a href="" aria-label="Ссылка на Twitter" 
+                    class="link">
+                    <img src="./img/social-link/twitter.svg" alt="Ссылка на Twitter">
+                  </a>
+                </li>
+                  <li class="our-team-social-link-list">
+                    <a href="" aria-label="Ссылка на Facebook" 
+                    class="link">
+                    <img src="./img/social-link/facebook.svg" alt="Ссылка на Facebook">
+                  </a>
+                </li>
+                  <li class="our-team-social-link-list">
+                    <a href="" aria-label="Ссылка на LinkedIn" 
+                    class="link">
+                  <img src="./img/social-link/linkedin.svg" alt="Ссылка на LinkedIn">
+                 </a>
+              </li>
             </ul>
+            </div>
           </li>
 
           <li class="our-team-card">
@@ -231,15 +292,36 @@
               width="270"
               height="260"
             />
+            <div class="team-member-information">
             <h3>Михаил Ермаков</h3>
             <p lang="en">UI Designer</p>
-
             <ul class="our-team-social-link list">
-              <li><a href="" aria-label="Ссылка на Facebook" class="link">Facebook</a></li>
-              <li><a href="" aria-label="Ссылка на Twitter" class="link">Twitter</a></li>
-              <li><a href="" aria-label="Ссылка на Instagram" class="link">Instagram</a></li>
-              <li><a href="" aria-label="Ссылка на LinkedIn" class="link">LinkedIn</a></li>
+                <li class="our-team-social-link-list">
+                  <a href="" aria-label="Ссылка на instagram" 
+                 class="link">
+                     <img src="./img/social-link/instagram.svg" alt="Ссылка на instagram">
+                   </a>
+                 </li>
+                   <li class="our-team-social-link-list">
+                     <a href="" aria-label="Ссылка на Twitter" 
+                     class="link">
+                     <img src="./img/social-link/twitter.svg" alt="Ссылка на Twitter">
+                   </a>
+                 </li>
+                   <li class="our-team-social-link-list">
+                     <a href="" aria-label="Ссылка на Facebook" 
+                     class="link">
+                     <img src="./img/social-link/facebook.svg" alt="Ссылка на Facebook">
+                   </a>
+                 </li>
+                   <li class="our-team-social-link-list">
+                     <a href="" aria-label="Ссылка на LinkedIn" 
+                     class="link">
+                   <img src="./img/social-link/linkedin.svg" alt="Ссылка на LinkedIn">
+                  </a>
+              </li>
             </ul>
+            </div>
           </li>
         </ul>
         </div>
@@ -247,39 +329,39 @@
  
 
         <!--============ Regular-customers =================-->
-      <section class="regular-customers section">
+      <section class="regular-customers-section">
         <div class="container">
         <h2 class="regular-customers-section-title">Постоянные клиенты</h2>
 
         <ul class="regular-customers-blank list">
-          <li class="regular-customers-logo">
+          <li>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="./img/regular-customers/client.svg" alt="" />
+              <img src="./img/regular-customers/ya&co.svg" alt="" />
             </a>
           </li>
-          <li class="regular-customers-logo">
+          <li>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="./img/regular-customers/client.svg" alt="" />
+              <img src="./img/regular-customers/tagline.svg" alt="" />
             </a>
           </li>
-          <li class="regular-customers-logo">
+          <li>
             <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="./img/regular-customers/client.svg" alt="" />
+            <img src="./img/regular-customers/company.svg" alt="" />
             </a>
           </li>
-          <li class="regular-customers-logo">
+          <li>
             <a href="">
-              <img src="./img/regular-customers/client.svg" alt="" />
+              <img src="./img/regular-customers/forester-peters.svg" alt="" />
             </a>
           </li>
-          <li class="regular-customers-logo">
+          <li>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="./img/regular-customers/client.svg" alt="" />
+              <img src="./img/regular-customers/brand.svg" alt="" />
             </a>
           </li>
-          <li class="regular-customers-logo">
+          <li>
             <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="./img/regular-customers/client.svg" alt="" />
+            <img src="./img/regular-customers/сlient-company.svg" alt="" />
             </a>
           </li>
         </ul>
@@ -289,7 +371,9 @@
 
     <!--============= Footer ==============-->
     <footer class="footer-section">
-      <div class="container footer-felxbox">
+      <div class="container footer-flexbox">
+        <div class="footer-information footer-flexbox">
+          <div class="footer-contacts-block">
         <a href="index.html" class="footer-logo">
           <span class="footer-logo-accent">Web</span>
           Studio
@@ -297,7 +381,7 @@
 
       <!---============ Address =============--->
         <address class="footer-adress location-adress">
-          <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
+          <p>г. Киев, пр-т Леси Украинки, 26</p>
         </address>
 
         <address class="footer-adress">
@@ -312,12 +396,39 @@
               </a>
             </li>
 
-            <li class="footer-adress-contacts">
+            <li class="footer-contacts adress">
               <a href="tel:+380961111111" class="link"> +38 096 111 11 11 </a>
             </li>
           </ul>
         </address>
-      </div>
+        </div>
+          <div class="footer-contacts-block">
+          <p class="call-to-action">присоединяйтесь</p>
+          <ul class="footer-contacts-social-link list">
+            <li>
+              <a href="" class="link">
+                <img src="./img/footer-social-link/instagram.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="" class="link">
+                <img src="./img/footer-social-link/twitter.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="" class="link">
+                <img src="./img/footer-social-link/facebook.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="" class="link">
+                <img src="./img/footer-social-link/linkedin.svg" alt="">
+              </a>
+            </li>
+          </ul>
+         </div>
+        </div>
+       </div>
     </footer>
   </body>
 </html>
