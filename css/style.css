@@ -147,6 +147,7 @@ body {
 	cursor: pointer;
 }
 
+
 /* =====================Adress site=====================  */
 .address a {
 	font-family: Roboto;
@@ -184,6 +185,14 @@ body {
 
 .hero-section {
 	text-align: center;
+}
+.hero-section img {
+	display: block;
+}
+
+.hero-flexbox {
+	display: flex;
+	align-items: center;
 }
 
 .hero-title {	
@@ -273,6 +282,11 @@ body {
 
 /* ==================================Features==================== */
 /* ==================================Advantages-features==================== */
+
+.section-advantages {
+	padding-top: 94px;
+}
+
 .advantages-features {
 	display: flex;
 	flex-wrap: wrap;
@@ -345,11 +359,22 @@ body {
 .duties-solutions:nth-child(3n) {
 	margin-right: 0;
 }
-
+.duties-solutions::nth-last-child(-n + 3) {
+	margin-bottom: 0;	
+}
 
 /* ===================Our team==================== */
 .section-our-team {
 	background: var(--secondary-bg-color);
+}
+
+.our-team-social-link img {
+	display: block;
+}
+
+.team-member-information {
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .our-team-personal {
@@ -357,20 +382,16 @@ body {
 	flex-wrap: wrap;
 }
 
-.our-team-card:nth-child(4n) {
-	margin-right: 0;
-}
-
-.our-team-card {
-	width: 270px;
+.our-team-card:not(:nth-child(4n)) {
 	margin-right: 30px;
-	margin-top: 50px;
+}
+.our-team-card {
+	width: calc((100% - 30px * 3) / 4);
 }
 
 .our-team-title {
-	padding-top: 94px;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 50px;
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: bold;
@@ -395,6 +416,11 @@ body {
 	color: var(--primary-title-color);
 }
 
+.our-team-card h3 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
 .our-team-card img {
 	display: block;
 }
@@ -411,16 +437,65 @@ body {
 	color: var(--primary-text-color);
 }
 
+.our-team-card p {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
 .our-team-card {
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
 
+.our-team-social-link {
+	display: flex;
+	justify-content: center;
+}
+
+.our-team-social-link a {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	border-radius: 50px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.our-team-social-link-list {
+	margin-right: 10px;
+}
+
+
+.our-team-social-link-list:nth-child(4n) {
+	margin-right: 0;
+}
+
 /* =====================Regular-customers===================== */
-.regular-customers-section-title {
+
+.regular-customers-section {
 	padding-top: 95px;
+	padding-bottom: 91px;
+}
+
+.regular-customers-blank img {
+	display: block;
+}
+
+.regular-customers-blank a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 90px;
+
+	border-radius: 4px;
+	border: 1px solid #AFB1B8;
+}
+
+.regular-customers-section-title {
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 50px;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.166;
@@ -437,16 +512,33 @@ body {
 	flex-wrap: wrap;
 }
 
-.regular-customers-logo {
-	width: 170px;
-	margin-right: 30px;
-	margin-top: 50px;
+.regular-customers-blank li {
+	width: calc((100% - 30px * 5) / 6 );
+}
 
+.regular-customers-blank li:not(:nth-child(6n)) {
+	margin-right: 30px;
 }
 
 /* =====================Footer===================== */
+.footer-section {
+	display: block;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: var(--footer-bg-color);
+}
+
+.footer-information {
+	display: flex;
+	align-items: baseline;
+}
+.footer-contacts-block {
+	/* width: calc((100% - 30px) / 2); */
+	margin-right: 70px;
+}
 /* =====================footer logo===================== */
 .footer-logo {
+	display: block;
 	font-family: Raleway;
 	font-style: normal;
 	font-weight: 700;
@@ -454,34 +546,52 @@ body {
 	line-height: 1.192;
 	text-decoration: none;
 
+	margin-bottom: 20px;
+
 	/* identical to box height */
 	letter-spacing: 0.03em;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	color: var(--primary-white-color);
 }
-
-.footer-logo:hover {
-	text-shadow: 0px 4px 4px rgba(24, 0, 243, 0.822);
-}
-
 .footer-logo-accent {
 	color: var(--accent-color);
 }
 
-/* Footer background */
-.footer-section {
-	background-color: var(--footer-bg-color);
+.footer-logo-accent:hover,
+.footer-logo-accent:focus {
+	text-shadow: 0px 4px 4px var(--accent-color);
 }
 
-.footer-section .container {
-	display: flex;
-	justify-content: space-between;
-	
+.footer-logo:hover, 
+.footer-logo:focus {
+	text-shadow: 0px 4px 4px rgba(252, 252, 252, 0.822);
 }
-/* Footer location */
-.footer-adress .location {
+
+
+/* ======================Footer background====================== */
+
+
+.footer-contacts-social-link li:not(:last-child) {
+	margin-right: 34px;
+}
+
+.footer-contacts-social-link img {
+	display: block;
+}
+.footer-contacts-social-link {
+	display: flex;
+}
+
+.footer-contacts-social-link a {
+	width: 44px;
+	height: 44px;
+	border-radius: 50px;
+}
+/* ======================Footer location====================== */
+.footer-adress p {
 	font-style: normal;
-	margin-top: 20px;
+	margin-top: 0;
+	margin-bottom: 20px;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.714;
@@ -492,7 +602,7 @@ body {
 	color: var(--primary-white-color);
 }
 
-/* Footer adress */
+/* ======================Footer adress====================== */
 .footer-contacts .link {
 	font-style: normal;
 	font-weight: 400;
@@ -504,12 +614,26 @@ body {
 
 	color: rgba(255, 255, 255, 0.6);
 }
-.footer-contacts a:hover {
+.footer-contacts a:hover,
+.footer-contacts a:focus {
 	color: var(--accent-color);
 }
 
-/* Portfolio-card page */
-/* Section-button */
+.footer-contacts li:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.call-to-action {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--primary-white-color);
+}
+
+/*====================== Portfolio-card page ======================*/
+/*===================== Section-button =====================*/
 .section-button {
 	margin-top: 94px;
 }
@@ -537,7 +661,8 @@ body {
 	
 	border-radius: 4px;	
 }
-/* Portfolio-filter list */
+
+/* ====================Portfolio-filter list==================== */
 .portfolio-filter {
 	display: flex;
 	margin-bottom: 50px;
@@ -558,7 +683,7 @@ body {
 }
 
 
-/* Portfolio-card */ 
+/* ====================Portfolio-card==================== */ 
 .portfolio-card {
 	box-shadow: var(--card-shadow);
 	border-radius: 4px;
@@ -568,12 +693,13 @@ body {
 }
 
 .portfolio-card {
-	width: 370px;
+	/* width: 370px; */
+	width: calc((100% - 60px) / 3);
 	margin-right: 30px;
 	margin-bottom: 30px;
 }
 
-/* Portfolio-projects */
+/* ====================Portfolio-projects==================== */
 .portfolio-card:nth-child(3n) {
 	margin-right: 0;
 }
@@ -597,7 +723,7 @@ body {
 	/* outline: 1px solid green; */
 }
 
-/* Portfolio-project-information */
+/* ====================Portfolio-project-information==================== */
 .portfolio-project-information h2 {
 	font-weight: 700;
 	font-size: 18px;
