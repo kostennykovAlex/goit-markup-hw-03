@@ -713,15 +713,19 @@ body {
 /* ======================Footer location====================== */
 .footer-adress p {
 	font-style: normal;
-	margin-top: 0;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.714;
 
+	margin-top: 0;
+	margin-bottom: 0;
 	/* or 171% */
 	color: var(--primary-white-color);
 }
 
+.footer-adress {
+	margin-bottom: 8px;
+}
 /* ======================Footer adress====================== */
 .footer-contacts .link {
 	font-style: normal;
