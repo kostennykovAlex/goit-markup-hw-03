@@ -648,22 +648,15 @@ body {
 
 .footer-flexbox {
 	display: flex;
-	/* justify-content: space-between; */
 	align-items: baseline
 }
 
-.footer-contacts-block {
-	/* width: calc((100% - 30px) / 2); */
-}
 
 .footer-information:not(:last-child) {
 	margin-right: 93px;
 }
 .footer-contacts-block:not(:last-child) {
 	margin-right: 70px;
-}
-.footer-information {
-	/* width: calc((100% - 30px) / 2); */
 }
 
 .footer-input-size {
